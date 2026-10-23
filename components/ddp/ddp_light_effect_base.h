@@ -41,7 +41,7 @@ class DDPLightEffectBase {
 
   bool disable_gamma_{true};
 #ifdef USE_LIGHT_GAMMA_LUT
-  const esphome::light::GammaTable *gamma_table_backup_{nullptr};
+  const uint16_t *gamma_table_backup_{nullptr};
 #endif
   bool next_packet_will_be_first_{true};
 
